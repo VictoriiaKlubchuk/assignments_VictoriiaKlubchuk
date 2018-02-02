@@ -7,9 +7,6 @@ var gulp         = require('gulp'),
 	autoprefixer = require('gulp-autoprefixer'),
 	concat       = require('gulp-concat'),
 	copy         = require('gulp-copy');
-	// uglify       = require('gulp-uglifyjs'),
-	// rename = require('gulp-rename'),
-	// cssnano = require('gulp-cssnano');
 
 gulp.task('sass', function() {
 	return gulp.src('src/scss/**/*.scss')
@@ -65,21 +62,3 @@ gulp.task('default', function() {
 	gulp.watch('src/scss/**/*.scss', ['sass']);
 	gulp.watch('src/css/*.css', ['css']);
 });
-
-// gulp.task('scripts', () => {
-// 	return gulp.src(['src/libs/masonry/dist/masonry.pkgd.js', 'src/js/*.js'])
-// 	.pipe(concat('script.js'))
-// 	.pipe(uglify())
-// 	.pipe(gulp.dest('dist/js'))
-// 	.pipe(browserSync.reload({stream: true}))
-// });
-
-
-
-// gulp.task('default', function() {
-// 	gulp.start('pages', 'sass', 'browserSync', 'css', 'img', 'scripts', 'copy');
-// 	gulp.watch('src/*.html', ['pages']);
-// 	gulp.watch('src/sass/**/*.scss', ['sass']);
-// 	gulp.watch('src/css/*.css', ['css']);
-// 	gulp.watch('src/js/**/*.js', ['scripts']);
-// });
