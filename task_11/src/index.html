@@ -24,7 +24,7 @@
 					<tr>
 						<td>2 documents</td>
 						<td>2 languages</td>
-						<td value='USD:696.06'>$ 696.06</td>
+						<td>$ 696.06</td>
 						<td>48 hours*</td>
 					</tr>
 				</table>
@@ -69,7 +69,7 @@
 		<fieldset class="upload">
 			<h3 class="upload__title" data-count="1">Upload  your documents <span>(Doc, Docx, Text,  PDF, Markdown)</span></h3>
 			<label for="file" class="upload__btn">
-				<input type="file" id="file" name="upload-file"  class="visually-hidden" multiple accept=".doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" value="Upload a new file" required>
+				<input type="file" id="file" name="upload-file"  class="visually-hidden" multiple accept=".doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" required>
 				<span>Upload a new file</span>
 			</label>
 			<table class="upload__table">
@@ -83,13 +83,13 @@
 					<td>business_operations.docx</td>
 					<td>78kb</td>
 					<td>842</td>
-					<td><button class="upload__delete"><i class="fa fa-trash" aria-hidden="true"></i></button></td>
+					<td><button class="upload__delete"></button></td>
 				</tr>
 				<tr>
 					<td>business_financial.docx</td>
 					<td>26kb</td>
 					<td>2,326</td>
-					<td><button class="upload__delete"><i class="fa fa-trash" aria-hidden="true"></i></td>
+					<td><button class="upload__delete"></button></td>
 				</tr>
 			</table>
 		</fieldset>
@@ -138,17 +138,17 @@
 					<li class="time-limit__item">Average</li>
 					<li class="time-limit__item">Yersterday</li>
 				</ul>
-				<legend class="legend">
+				<div class="legend">
 					<h2 class="legend__title">Timeline info</h2>
 					<p class="legend__text">With an <b>average</b> timeline set up, our expert tramslater can take reasonable amount of time perfecting you translation</p>
-				</legend>
+				</div>
 			</div>
 		</div>
 		<fieldset class="payment">
 			<h3 data-count="5">Sign up and choose a payment method</h3>
 			<div class="payment__wrapper">
 				<p class="payment__text">Already have an account with us? <a class="payment__singIn" href="#">Sign in</a></p>
-				<label class="payment__label" for="clientName" pattern="a-zA-ZА-Яа-яЁё">Full name</label>
+				<label class="payment__label" for="clientName">Full name</label>
 				<input class="payment__personal-info" type="text" id="clientName" name="name" pattern="[A-Za-z' -]+" minlength="2" maxlength="50" required>
 			</div>
 			<div class="payment__wrapper payment__wrapper--2">
